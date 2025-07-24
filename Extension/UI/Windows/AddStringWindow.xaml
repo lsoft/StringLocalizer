@@ -1,0 +1,32 @@
+﻿<Window
+    x:Class="Extension.UI.Windows.AddStringWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+    xmlns:local="clr-namespace:Extension.UI.Windows"
+    xmlns:ui="clr-namespace:Extension.UI"
+    xmlns:b="http://schemas.microsoft.com/xaml/behaviors"
+    mc:Ignorable="d" 
+    d:DesignHeight="450" d:DesignWidth="800"
+    ui:VsTheme.UseVsTheme="True"
+    Loaded="Window_Loaded"
+    KeyUp="Window_KeyUp"
+    >
+
+    <Grid>
+        <ui:AddStringControl
+            Background="Transparent"
+            ResxGroupList="{Binding CurrentResxGroupList}"
+            SelectedResxGroup="{Binding SelectedCurrentResxGroup}"
+            ResourceName="{Binding CurrentResourceName}"
+            NeutralComment="{Binding CurrentNeutralComment}"
+            LanguageList="{Binding CurrentLanguageList}"
+            ApplyCommand="{Binding CurrentApplyCommand}"
+            HorizontalAlignment="Stretch"
+            HorizontalContentAlignment="Stretch"
+            Focusable="True"
+            x:Name="ASC"
+            />
+    </Grid>
+</Window>

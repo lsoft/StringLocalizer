@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CommandTable xmlns="http://schemas.microsoft.com/VisualStudio/2005-10-18/CommandTable" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <Extern href="stdidcmd.h"/>
+  <Extern href="vsshlids.h"/>
+  <Include href="KnownImageIds.vsct"/>
+  <Include href="VSGlobals.vsct"/>
+
+  <Commands package="StringLocalizer">
+    
+    <Menus>
+      <Menu guid="StringLocalizer" id="SubExtensionMenu" priority="0x0000" type="Menu">
+        <Parent guid="StringLocalizer" id="ExtensionMenuGroup" />
+        <Strings>
+          <ButtonText>String Localizer</ButtonText>
+        </Strings>
+      </Menu>
+        
+    </Menus>
+
+    <Groups>
+      <Group guid="StringLocalizer" id="ExtensionMenuGroup" priority="0x0100">
+        <Parent guid="VSMainMenu" id="Extensions"/>
+      </Group>
+      <Group guid="StringLocalizer" id="SubExtensionMenuGroup" priority="0x0000">
+        <Parent guid="StringLocalizer" id="SubExtensionMenu" />
+      </Group>
+
+  </Groups>
+
+    <Buttons>
+      <Button guid="StringLocalizer" id="AddStringToResourceCommandId" priority="0x0100" type="Button">
+        <Parent guid="StringLocalizer" id="SubExtensionMenuGroup" />
+        <Icon guid="ImageCatalogGuid" id="Localize" />
+        <CommandFlag>IconIsMoniker</CommandFlag>
+        <Strings>
+          <ButtonText>Add string to application resource</ButtonText>
+          <LocCanonicalName>.Extension.AddStringToResourceCommandId</LocCanonicalName>
+        </Strings>
+      </Button>
+    </Buttons>
+  </Commands>
+
+  <KeyBindings>
+    <KeyBinding guid="StringLocalizer" id="AddStringToResourceCommandId" key1="J" mod1="ALT" editor="guidVSStd97" />
+  </KeyBindings>
+
+  <Symbols>
+    <GuidSymbol name="StringLocalizer" value="{c8d8d45f-f485-4c8d-beb8-3774dee9dcc3}">
+      
+      <IDSymbol name="ExtensionMenuGroup" value="0x1001" />
+      <IDSymbol name="SubExtensionMenuGroup" value="0x1002" />
+      <IDSymbol name="AddStringToResourceCommandId" value="0x1003" />
+
+      <IDSymbol name="SubExtensionMenu" value="0x1004" />
+      
+    </GuidSymbol>
+  </Symbols>
+</CommandTable>
