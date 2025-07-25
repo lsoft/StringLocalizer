@@ -1,6 +1,6 @@
 # String Localizer
 
-[Эта страница на русском языке](https://translate.google.com/translate?sl=en&tl=ru&hl=en&u=https://github.com/lsoft/FreeAIr&client=webapp)
+[Эта страница на русском языке](https://translate.google.com/translate?sl=en&tl=ru&hl=en&u=https://github.com/lsoft/StringLocalizer&client=webapp)
 
 The faster way to add strings to your resx files. Just install the [extension](https://marketplace.visualstudio.com/items?itemName=lsoft.StringLocalizer), selected the text and press Alt+J.
 

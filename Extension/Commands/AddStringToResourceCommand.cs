@@ -65,8 +65,7 @@ namespace Extension
                 return;
             }
 
-            var targetNamespace = await result.Group.Project.TryDetermineTargetNamespaceAsync(
-                result.Group.ResxList[0].SolutionItem.FullPath
+            var targetNamespace = await result.Group.TryDetermineTargetNamespaceAsync(
                 );
 
             var documentExtension = new FileInfo(documentView.FilePath).Extension;

@@ -1,4 +1,5 @@
 ﻿using Extension.Commands;
+using Extension.Helper;
 using Microsoft.CodeAnalysis;
 using System.Collections.Generic;
 using System.Globalization;
@@ -131,6 +132,14 @@ namespace Extension
         public async Task RebuildDesignerForResxFileAsync()
         {
             await ResxDesignerRebuilder.RebuildDesignerForResxFileAsync(ResxList[0].FilePath);
+        }
+
+        public async System.Threading.Tasks.Task<string> TryDetermineTargetNamespaceAsync()
+        {
+            var targetNamespace = await Project.TryDetermineTargetNamespaceAsync(
+                ResxList[0].SolutionItem.FullPath
+                );
+            return targetNamespace;
         }
     }
 }
