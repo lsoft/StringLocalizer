@@ -152,6 +152,7 @@
                                     Text="{Binding Text, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
                                     CaretBrush="{Binding ElementName=TB, Path=Foreground}"
                                     Focusable="True"
+                                    TextWrapping="Wrap"
                                     TabIndex="{Binding RelativeSource={RelativeSource Self}, Path=(ItemsControl.AlternationIndex), Converter={StaticResource IndexToTabIndexConverter}, ConverterParameter=2}"
                                     GotFocus="TB_GotKeyboardFocus"
                                     />

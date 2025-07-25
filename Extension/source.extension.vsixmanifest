@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
     <Metadata>
-        <Identity Id="Extension.eb78aa63-702f-4de0-9fe8-3a6b5cebb723" Version="1.0" Language="en-US" Publisher="lsoft" />
+        <Identity Id="Extension.eb78aa63-702f-4de0-9fe8-3a6b5cebb723" Version="1.1" Language="en-US" Publisher="lsoft" />
         <DisplayName>String Localizer</DisplayName>
         <Description xml:space="preserve">The faster way to add strings to your resx files.</Description>
         <Icon>Resources\Icon.png</Icon>

@@ -25,7 +25,7 @@ namespace Extension.Commands
             var resourceName = result.ResourceName;
 
             var xamlDocument = new XmlDocument();
-            xamlDocument.LoadXml(File.ReadAllText(xamlDocumentView.FilePath));
+            xamlDocument.LoadXml(xamlDocumentView.TextBuffer.CurrentSnapshot.GetText());
 
             if (xamlDocument.ChildNodes.Count == 0)
             {

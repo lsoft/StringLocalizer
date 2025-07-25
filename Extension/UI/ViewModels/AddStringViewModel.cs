@@ -185,7 +185,14 @@ namespace Extension.UI.ViewModels
                 index++;
             }
 
-            return sb.ToString().Trim('_');
+            var trimmed = sb.ToString().Trim('_');
+            if (char.IsDigit(trimmed[0]))
+            {
+                trimmed = "a_" + trimmed;
+            }
+
+
+            return trimmed;
         }
     }
 

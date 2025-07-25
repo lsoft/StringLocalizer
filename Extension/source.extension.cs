@@ -12,7 +12,7 @@ namespace Extension
         public const string Name = "String Localizer";
         public const string Description = @"The faster way to add strings to your resx files.";
         public const string Language = "en-US";
-        public const string Version = "1.0";
+        public const string Version = "1.1";
         public const string Author = "lsoft";
         public const string Tags = "resx";
         public const bool IsPreview = false;
